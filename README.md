@@ -67,6 +67,11 @@ If you want to use your own set of Roo modes or rules, you can:
 2.  Modify the `.roomodes` and rule files in your fork.
 3.  Update the `GITHUB_BASE_URL` variable at the top of `install_taskmaster.py` to point to your forked repository's raw content URL.
 
+   
+![snag-roo-tm](https://github.com/user-attachments/assets/db3db6ee-d885-459f-8672-872514826f61)
+
+   
+
 ## License
 
 This script is released under the MIT License. See the LICENSE file for details.
