@@ -3,7 +3,7 @@
 [![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository provides a streamlined setup script (`install_taskmaster.py`) for integrating the [Task Master AI](https://github.com/your-org/task-master-ai) CLI tool with [Roo Code](https://www.roocode.com/), leveraging a curated set of Roo modes and rules fetched from the [neno-is-ooo/roo-taskmaster-patch](https://github.com/neno-is-ooo/roo-taskmaster-patch) repository.
+This repository provides a streamlined setup script (`install_taskmaster.py`) for integrating the [Task Master AI](https://github.com/eyaltoledano/claude-task-master) CLI tool with [Roo Code](https://www.roocode.com/), leveraging a curated set of Roo modes and rules fetched from the [neno-is-ooo/roo-taskmaster-patch](https://github.com/neno-is-ooo/roo-taskmaster-patch) repository.
 
 ## Overview
 
@@ -13,7 +13,7 @@ The `install_taskmaster.py` script automates several setup steps to ensure a con
 
 *   **Automated Taskmaster Installation:** Installs the `task-master-ai` npm package either globally or locally.
 *   **Guided Roo Code MCP Configuration:** Checks your Roo Code `mcp_settings.json` and interactively helps configure the `taskmaster-ai` server, prompting for necessary API keys (Anthropic, Perplexity).
-*   **Custom Roo Modes & Rules:** Downloads pre-configured Roo modes (`.roomodes`) and enhanced Roo rules (`.roo/rules-*/*`) specifically tailored for Taskmaster workflows from the `neno-is-ooo/roo-taskmaster-patch` repository.
+*   **Custom Roo Modes & Rules:** Downloads pre-configured Roo modes (`.roomodes`) [Boomerang] and enhanced Roo rules (`.roo/rules-*/*`) specifically tailored for Taskmaster workflows from the `neno-is-ooo/roo-taskmaster-patch` repository.
 *   **Legacy Configuration Handling:** Migrates configurations from older `.cursor` directories to the new `.roo` standard and removes legacy `.windsurfrules`.
 *   **Interactive Project Initialization:** Runs the `task-master init` command interactively, allowing you to configure your Taskmaster project details.
 *   **User-Friendly Output:** Provides clear, colored step-by-step feedback during the installation process.
@@ -38,7 +38,7 @@ Using this script offers several advantages over a manual setup or relying solel
 2.  **Navigate to your project:** Open your terminal and change the directory to your project's root folder.
 3.  **Run the script:**
     ```bash
-    python install_taskmaster.py
+    python3 install_taskmaster.py
     ```
 4.  **Follow prompts:** The script will guide you through the installation choices (global vs. local), API key entry (optional, placeholders can be used), and Taskmaster project initialization.
 
